@@ -15,7 +15,7 @@
 
 body {
     margin: 0;
-    background: #ffffff;
+    background: #121212;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,7 +25,7 @@ body {
 }
 
 .fa-magnifying-glass {
-    color: black;
+    color: #ffffff;
 }
 
 .logo-wrapper {
@@ -43,11 +43,11 @@ body {
 .logo-wrapper .text {
     font-size: 75px;
     font-family: "Roboto";
-    color: #000000;
+    color: #ffffff;
 }
 
 .logo-wrapper h1 {
-    color: black;
+    color: #ffffff;
 }
 
 footer {
@@ -64,7 +64,7 @@ footer a,
 footer span {
     margin: 0 15px;
     text-decoration: none;
-    color: #111;
+    color: #cf6679;
     font-size: 15px;
 }
 
@@ -103,11 +103,11 @@ form input {
     width: 350px;
     margin-top: 5px;
     border-radius: 50px;
-    color: #111;
+    color: #bb86fc;
 }
 
 form input:focus {
-    border: 1px solid rgba(253, 253, 253, 0.514);
+    border: 1px solid #3700b3;
     border-radius: 6px;
     animation: fadeInAnimation ease-in-out 0.3s;
     animation-iteration-count: 1;
