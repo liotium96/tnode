@@ -167,6 +167,18 @@ form input:focus {
     animation-fill-mode: forwards;
 }
 
+.focussed {
+    border: 1px solid #3700b3;
+    border-radius: 6px;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;    
+}
+
+.hide {
+    visibility: hidden;
+}
+
 button {
     background-color: #bb86fc;
     color: #ffffff;
@@ -174,7 +186,7 @@ button {
     animation: fadeInAnimation ease-in-out 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    width: 50;
+    width: 50px;
     height: 50px
 }
 </style>
@@ -187,11 +199,14 @@ button {
     <div title="Using advanced web technology, to find the information you want to find, fast!" class="desc">
         <p>Find the things you want to find! Simple and easy!</p>
     </div>
-    <form>
-        <input placeholder="Find it!">
-    </form>
 
-    <button id="click">Search!</button>
+    <div id="search_bar" class="hide">
+        <form>
+            <input placeholder="Find it!">
+        </form>
+    </div>
+
+    <button id="search_button" onclick="open_search()">Search!</button>
 
     <footer>
        <p>&copy - O.P.C 2023, Cameron Wilson did not get me to do this &#128518</p>
@@ -199,6 +214,14 @@ button {
     <script src="uv/uv.bundle.js"></script>
     <script src="uv/uv.config.js"></script>
     <script src="index.js"></script>
+
+    <script>
+        function on_search(){
+            document.getElementById("search_button").style.visibility = "hidden";
+            document.getElementById("search_bar").style.visibility = "visibility"; 
+
+        }
+    </script>
 </body>
 
 </html>
